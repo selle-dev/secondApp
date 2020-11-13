@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<title>Shows</title>
+	<!-- include an external style sheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="style-v1.css">  		
+	<!-- include an external JavaScript file -->
+	<script src="apiexample-v1.js"></script>
+	<link rel="manifest" href="manifest.json">
+	<meta name ="theme-color" content="#FFE1C4">
+	<link rel="apple-touch-icon" href="icon-192-192.png">
+
+</head>
+
+<body>
+
+<div class = "frame_container">
+
+	<div class = "item_search_bar_left"></div>
+	<div class = "item_search_bar_middle">
+	
+		<div class="img_container"> <img src="tvm-header-logo.png" alt = "logo" class= "logo" ></div>
+		
+		<div class="search_container">
+			 <div class="search">
+				<input id="search_input" type="text" class="searchTerm" placeholder="Search Shows">
+				<button type="submit" class="searchButton" onclick="fetchData()">
+				  <i class="fa fa-search"></i>
+			   </button>
+			 </div>
+		 </div>
+	
+	</div>
+	<div class = "item_search_bar_right"></div>
+	
+	
+	<div class = "item_menu_bar_left"></div>
+	<div class = "item_menu_bar_middle">
+	<a href="index.html">HOME</a>
+	<a href="shows.html" onclick="display_shows();">SHOWS</a>
+	<a href="about.html">ABOUT</a>
+	</div>
+	<div class = "item_menu_bar_right"></div>
+	
+	
+	
+	<div class = "item_body_bar_left"> </div>
+	<div id="body_bar_middle" class = "item_body_bar_middle">
+					<div id="main" class = "home-container">
+						
+					<script> display_shows() </script>
+						
+					</div>
+	</div>
+	<div class = "item_body_bar_right">
+	</div>
+
+</div>
+
+<div id="lightbox" onclick="closeLightBox()">
+			<div id="message" class = "message-container">
+				<div class="message-item1" id="M_LEFT"></div>
+				<div class="message-item2" id="M_RIGHT"></div>
+				
+			</div>
+			
+</div>
+
+
+</body>
+
+</html>
